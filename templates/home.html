@@ -1,0 +1,13 @@
+home html from template of the root<br />
+template_title: {{ template_title }}<br />
+user: {{ user }}<br />
+request user: {{ request.user }}<br />
+title: {{ title }}<br />
+abc is = {{ abc }}<br />
+<form method='' action='.'>{% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type='submit' value='Sign Up' />
+
+</form>
